@@ -1,0 +1,76 @@
+.card-deck .card {
+  width: 150px;
+  flex: auto;
+  flex-grow: 0;
+  margin: 10px;
+  height: 150px;
+
+  &:hover .close {
+    display: block;
+  }
+}
+
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px; /* fallback */
+  max-height: 64px; /* fallback */
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.col-2 {
+  text-align: right;
+}
+
+form {
+  width: 300px;
+
+}
+
+body {
+  margin: 20px;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 18px;
+  height: 21px;
+  opacity: 0.3;
+  display: none;
+  text-indent: -9999px;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  left: 7px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: #333;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.notification-wrapper {
+  height: 48px;
+  max-width: 420px;
+}
+.form-control{
+  border: none;
+  margin-bottom: 3px;
+  resize: none;
+}

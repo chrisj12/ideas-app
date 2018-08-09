@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "eslint-config-airbnb"
+  ],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "indent": [
+      "error", 4
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "react/jsx-indent": 0,
+    "react/jsx-indent-props": 0
+  }
+}
